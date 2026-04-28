@@ -1,0 +1,151 @@
+.milestones-container {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px var(--shadow);
+    color: var(--text-color);
+}
+
+.milestones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.milestones-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.add-milestone-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+}
+
+.add-milestone-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.add-milestone-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 16px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    align-items: center;
+}
+
+.add-milestone-form input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.add-milestone-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-milestone-form button[type="button"] {
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.milestones-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.milestone-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.milestone-item.completed {
+    opacity: 0.7;
+    background-color: rgba(34, 197, 94, 0.05);
+    /* subtle green */
+}
+
+.status-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-toggle:disabled {
+    cursor: default;
+}
+
+.icon-pending {
+    color: var(--text-muted);
+}
+
+.icon-completed {
+    color: #22c55e;
+}
+
+.milestone-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.milestone-title {
+    font-weight: 500;
+}
+
+.milestone-item.completed .milestone-title {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.milestone-date {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-muted);
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    border: 1px dashed var(--border-color);
+}

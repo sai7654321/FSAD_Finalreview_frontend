@@ -1,0 +1,103 @@
+/* Full page background */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+}
+
+/* Card */
+.login-card {
+  width: 420px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+/* Role Toggle */
+.role-toggle {
+  display: flex;
+  background: #f1f3f6;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.role-toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.role-toggle button.active {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+form input {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+}
+
+/* Sign In Button */
+.signin-btn {
+  background: #1e3a8a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin-btn:hover {
+  background: #162d63;
+}
+
+/* Bottom text */
+.register-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #6b7280;
+}
+
+.register-text span {
+  color: #0ea5a4;
+  cursor: pointer;
+  font-weight: 500;
+}
